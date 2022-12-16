@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <title>Calculator</title>
+</head>
+<body id="Calculator_1">
+    <h2 >Calculator V1</h2>
+    <table>
+        <tr>
+            <td>1st number: </td>
+            <td><input type="text" id="1st" name="1st number" value=""></td>
+        </tr>
+        <tr>
+            <td>2nd number: </td>
+            <td><input type="text" id="2nd" name="2nd number" value=""></td>
+        </tr>
+        <tr>
+            <td>Result: </td>
+            <td><input type="text" disabled id="result" name="Result" value=""></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="text-align: center;">
+                <button type="button" name="button" onclick="calculate('add')">+</button>
+                <button type="button" name="button" onclick="calculate('sub')">-</button>
+                <button type="button" name="button" onclick="calculate('mul')">*</button>
+                <button type="button" name="button" onclick="calculate('div')">/</button>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        function calculate(objectID) {
+            var n1 = parseFloat(document.getElementById('1st').value);
+            var n2 = parseFloat(document.getElementById('2nd').value);
+            var result
+            if (objectID == "add") {
+                result = (n1) + (n2);
+            }
+            else if (objectID == "sub") {
+                result = (n1) - (n2);
+            }
+            else if (objectID == "mul") {
+                result = (n1) * (n2);
+            }
+            else if (objectID == "div") {
+                result = (n1) / (n2);
+            }
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>
