@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="style/style.css" /> -->
+    <title>Calculator</title>
+    <style>
+        td.dial button {
+            width: 41px;
+            background-color: white;
+            color: black;
+            border: 2px solid blue;
+            transition-duration: 0.4s;
+        }
+        td.dial button:hover {
+            background-color: blue;
+            color: white;
+        }
+        table {
+            border-style: solid;
+            border-color: blue;
+        }
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body id="Calculator_2" class="reset-style">
+    <h2 >Calculator V2</h2>
+    <table>
+        <tr>
+            <td><input type="text" id="expression" name="expression" value=""></td>
+            <td><button type="button" name="button" onclick="reset()">Clear</button></td>
+        </tr>
+        <tr>
+            <td class="dial">
+                <button type="button" name="button" onclick="update('7')">7</button>
+                <button type="button" name="button" onclick="update('8')">8</button>
+                <button type="button" name="button" onclick="update('9')">9</button>
+                <button type="button" name="button" onclick="update('/')">/</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="dial">
+                <button type="button" name="button" onclick="update('4')">4</button>
+                <button type="button" name="button" onclick="update('5')">5</button>
+                <button type="button" name="button" onclick="update('6')">6</button>
+                <button type="button" name="button" onclick="update('*')">*</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="dial">
+                <button type="button" name="button" onclick="update('1')">1</button>
+                <button type="button" name="button" onclick="update('2')">2</button>
+                <button type="button" name="button" onclick="update('3')">3</button>
+                <button type="button" name="button" onclick="update('-')">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="dial">
+                <button type="button" name="button" onclick="update('0')">0</button>
+                <button type="button" name="button" onclick="update('.')">.</button>
+                <button type="button" name="button" onclick="calculate()">=</button>
+                <button type="button" name="button" onclick="update('+')">+</button>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        function calculate() {
+            
+            let text = document.getElementById("expression").value;
+            result = eval(text);
+            document.getElementById("expression").value = result;
+
+        }
+
+        function reset() {
+            let reset = "";
+            document.getElementById("expression").value = reset;
+
+        }
+
+        function update(buttonPressed) {
+            if (buttonPressed == '7') {
+                var button = "7"
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed == '8') {
+                var button = "8"
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed =='9') {
+                var button = "9"
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed == '/') {
+                var button = "/"
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed == '4') {
+                var button = "4"
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed == '5') {
+                var button = "5"
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed == '6') {
+                var button = "6"
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed == '*') {
+                var button = "*"
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed == '1') {
+                var button = "1"
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed == '2') {
+                var button = "2"
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed == '3') {
+                var button = "3"
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed == '-') {
+                var button = "-"
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed == '0') {
+                var button = "0"
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed == '.') {
+                var button = "."
+                document.getElementById("expression").value += button;
+            }
+            else if (buttonPressed == '+') {
+                var button = "+"
+                document.getElementById("expression").value += button;
+            }
+        }
+
+    </script>
+</body>
+</html>
