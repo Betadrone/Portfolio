@@ -1,0 +1,131 @@
+body#Portfolio_pg_2 {
+    background-color: black;
+    color: beige;
+}
+
+body#Portfolio_pg_1 {
+    background-color: rgb(224, 201, 166);
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+pre {
+    text-align: center;
+    font-size: smaller;
+    font-style: italic;
+    font-weight: bold;
+}
+
+p#Top, p#Bottom {
+    text-align: center;
+    text-decoration: wavy;
+    font-size: small;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+blockquote.inset {
+    border-style: inset;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+div{
+    background-color: rgb(0, 5, 51);
+}
+
+.solidBorder {
+    border-style: solid;
+    border-top-style: dotted;
+    border-left-style: dashed;
+    border-right-style: dashed;
+    border-width: 3px;
+}
+
+.video {
+    border-style: dashed;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.column {
+    background-color: black;
+    border-style: double;
+    border-color: beige;
+}
+
+img {
+    border-style: solid;
+    border-color: blueviolet;
+    border-style: double;
+}
+
+.reset-style{
+    background-color: black;
+}
+
+#Project1, #Project2, #Project3, #Project4, #Project5, #Project6 {
+    border-radius: 50%;
+}
+
+.FavouriteGames{
+    background-color: rgba(60, 255, 0, 0.801) ; 
+}
+
+.LikeDislike{
+    background-color: rgb(38, 203, 253);
+}
+
+.FoodDrink{
+    background-color: grey;
+}
+
+.size_hr{
+    height: 3px;
+}
+
+#Calculator_1 table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    width: 40%;
+    border-style: solid;
+}
+#Calculator_1{
+    background-color:brown;
+    color: white;
+}
+#Calculator_1 tr:nth-child(odd){
+    background-color: black;
+    color: white;
+}
+#Calculator_1 tr:nth-child(even){
+    background-color: grey;
+    color: black;
+}
